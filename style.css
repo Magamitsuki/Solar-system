@@ -1,0 +1,99 @@
+* {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #11252b;
+  background-repeat: no-repeat;
+}
+
+#evren {
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#galaksi {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#güneş,
+.gezegen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  border-radius: 50%;
+}
+
+#güneş {
+  font-size: 520px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gezegen {
+  background-color: #101f30;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yörünge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #646464;
+  border-radius: 50%;
+  animation-name: yörünge;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#dünya.yörünge {
+  width: 620px;
+  height: 620px;
+  margin-top: -311px;
+  margin-left: -313px;
+  animation-duration: 2s;
+}
+
+@keyframes yörünge {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+#dünya .gezegen {
+  left: 50%;
+  top: -1%;
+}
+
+#dünya {
+  font-size: 85px;
+}
+
+#güneş {
+  background-image: url(bright-sun.png);
+}
+
+.gezegen {
+  background-image: url(Earth_Western_Hemisphere_transparent_background.png);
+}
